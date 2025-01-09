@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="h-screen relative bg-cover">
+        <!-- navigace -->
+        <nav class="flex flex-row justify-between items-center bg-[#e3e2e2] h-24 z-40 w-full px-6 fixed bg-opacity-90">
+            <!-- Ikona pro otevření menu -->
+
+
+<!-- Mobilní menu -->
+<div id="mobile-menu" class="fixed top-0 left-[-100%] w-[70%] max-w-sm h-full bg-[#a19f9f] overflow-y-auto transition-all duration-300 z-50 shadow-lg">
+
+
+    <ul class="flex flex-col text-[18px] space-y-4 p-6">
+        <li class="py-2 px-2 text-black hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold">O mně</li>
+        <li class="py-2 px-2 text-black hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold">ESP32 a Arduino</li>
+        <li class="py-2 px-2 text-black hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold"><a href="fotogalerie.html">Fotogalerie</a></li>
+        <li class="py-2 px-2 text-black hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold"><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</div>
+
+            <div>
+               <a href="index.html"><img class="w-56" src="../img/logo-1.png" alt="Logo"></a> 
+            </div>
+
+            <div class="hidden lg:inline">
+                <ul class="flex flex-row text-[18px] space-x-4">
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    ">O mně</li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    ">ESP32 a Arduino</li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    "><a href="fotogalerie.html">Fotogalerie</a></li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    "><a href="kontakt.html">Kontakt</a></li>
+
+                   
+                </ul>
+            </div>
+            <div id="menu-icon" class="lg:hidden cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </div>
+
+
+            <button class="
+                border-2 border-[x] p-2 w-28 rounded-xl hover:bg-[#0f76bb] hover:text-white transition duration-300 ml-24 hidden lg:inline
+            ">
+                <a href="index.html">Domů</a>
+            </button>
+        </nav>
+        
+
+     
+
+
+    </header>
+
+    <script>
+const menuIcon = document.getElementById('menu-icon');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuIcon.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('left-0')) {
+        mobileMenu.classList.remove('left-0');
+        mobileMenu.classList.add('left-[-100%]');
+    } else {
+        mobileMenu.classList.remove('left-[-100%]');
+        mobileMenu.classList.add('left-0');
+    }
+});
+
+    </script>
+    
+</body>
+
+</html>

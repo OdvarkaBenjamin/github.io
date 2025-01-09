@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="h-screen relative bg-cover">
+        <!-- navigace -->
+        <nav class="flex flex-row justify-between items-center bg-[#e3e2e2] h-24 z-40 w-full px-6 fixed bg-opacity-90">
+            <div>
+                <img class="w-56" src="../img/logo-1.png" alt="Logo">
+            </div>
+
+            <div class="hidden lg:inline">
+                <ul class="flex flex-row text-[18px] space-x-4">
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    ">O mně</li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    ">ESP32 a Arduino</li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    "><a href="fotogalerie.html">Fotogalerie</a></li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    "><a href="kontakt.html">Kontakt</a></li>
+
+                   
+                </ul>
+            </div>
+
+
+            <button class="
+                border-2 border-[x] p-2 w-28 rounded-xl hover:bg-[#0f76bb] hover:text-white transition duration-300 ml-24
+            ">
+                <a href="index.html">Domů</a>
+            </button>
+        </nav>
+        
+        <div class="pt-40 text-center">
+            <h1 class="text-[45px] font-semibold">Kontakt</h1>
+            <p class="text-xl">E-mail: <a class="text-[#0f76bb] font-medium" href="mailto:ben.odvarka%40seznam.cz">ben.odvarka@seznam.cz</a></p>
+
+        </div>
+      
+
+    </header>
+
+
+    
+</body>
+
+</html>

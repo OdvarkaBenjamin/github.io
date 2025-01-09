@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../js/script.js">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="h-screen relative bg-cover">
+        <!-- navigace -->
+        <nav class="flex flex-row justify-between items-center bg-[#e3e2e2] h-24 z-40 w-full px-6 fixed bg-opacity-90">
+            <div>
+                <img class="w-56" src="../img/logo-1.png" alt="Logo">
+            </div>
+
+            <div class="hidden lg:inline">
+                <ul class="flex flex-row text-[18px] space-x-4">
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    ">O mně</li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    ">ESP32 a Arduino</li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    ">Fotogalerie</li>
+                    <li class="py-2 px-2 text-black
+                    hover:bg-[#0f76bb] hover:text-white rounded-lg cursor-pointer font-bold
+                    "><a href="kontakt.html">Kontakt</a></li>
+
+
+                </ul>
+            </div>
+
+
+            <button class="
+                border-2 border-[x] p-2 w-28 rounded-xl hover:bg-[#0f76bb] hover:text-white transition duration-300 ml-24
+            ">
+                <a href="index.html">Domů</a>
+            </button>
+        </nav>
+        <!-- fotogalerie -->
+
+
+        <div class="">
+            <div class="flex flex-row justify-center items-center pt-44
+            font-semibold
+            ">
+                <h1 class="text-[45px] text-center">Fotogalerie</h1>
+            </div>
+            <div
+                class="lg:grid lg:grid-cols-2 lg:grid-rows-3 mt-10 lg:mx-40 grid-cols-1 mx-8 md:grid-cols-2 xl:grid-cols-3
+                text-2xl font-medium 
+                ">
+    
+    
+                <!-- fotka 1 -->
+                <div
+                    class="flex flex-col justify-center items-center col-span-1 border-[#0f76bb] border-2 py-10 rounded-xl mx-8 my-4 px-4 mb-8">
+                    <img class="w-60 rounded-xl" src="../img/1.jpg" alt="">
+                    <h1 class="pt-6">Zlatý lísteček</h1>
+                </div>
+                <!-- fotka 2 -->
+                <div
+                    class="flex flex-col justify-center items-center col-span-1 border-[#0f76bb] border-2 py-10 rounded-xl mx-8 my-4 px-4  mb-8">
+                    <img class="w-60 rounded-xl" src="../img/2.jpg" alt="">
+                    <h1 class="pt-6">Jarní Fialky</h1>
+                </div>
+                <!-- fotka 3 -->
+                <div
+                    class="flex flex-col justify-center items-center col-span-1 border-[#0f76bb] border-2 py-10 rounded-xl mx-8 my-4 px-4  mb-8">
+                    <img class="w-60 rounded-xl" src="../img/3.jpg" alt="">
+                    <h1 class="pt-6">Tygr</h1>
+                </div>
+                <!-- fotka 4 -->
+                <div
+                    class="flex flex-col justify-center items-center col-span-1 border-[#0f76bb] border-2 py-10 rounded-xl mx-8 my-4 px-4  mb-8">
+                    <img class="w-60 rounded-xl" src="../img/4.jpg" alt="">
+                    <h1 class="pt-6">Vierwaldstätter See</h1>
+                </div>
+                <!-- fotka 5 -->
+                <div
+                    class="flex flex-col justify-center items-center col-span-1 border-[#0f76bb] border-2 py-10 rounded-xl mx-8 my-4 px-4  mb-8">
+                    <img class="w-60 rounded-xl" src="../img/5.jpg" alt="">
+                    <h1 class="pt-6">Ráno v Alpách</h1>
+                </div>
+                <!-- fotka 6 -->
+                <div
+                    class="flex flex-col justify-center items-center col-span-1 border-[#0f76bb] border-2 py-10 rounded-xl mx-8 my-4 px-4  mb-8">
+                    <img class="w-60 rounded-xl" src="../img/6.jpg" alt="">
+                    <h1 class="pt-6">Úplněk</h1>
+                </div>
+                <!-- fotka 7 -->
+                <div
+                    class="flex flex-col justify-center items-center col-span-1 border-[#0f76bb] border-2 py-10 rounded-xl mx-8 my-4 px-4  mb-8">
+                    <img class="w-60 rounded-xl" src="../img/7.jpg" alt="">
+                    <h1 class="pt-6">Noční Doprava</h1>
+                </div>
+        
+          
+    
+    
+    
+            </div>
+
+        </div>
+       
+
+
+
+
+
+    </header>
+
+
+
+</body>
+
+</html>
